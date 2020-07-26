@@ -148,7 +148,7 @@
                         android:textColor="@color/black"
                         app:typeface="fzlLTypeface" />
 
-                    <com.eye.eye.ui.common.view.TypefaceTextView
+                    <com.eye.eye.ui.common.view.TypefaceRadioButton
                         android:id="@+id/rbTranslateClose"
                         style="@style/SettingRadioButton"
                         android:checked="@={!viewModel.rbTranslateOpen}"

@@ -217,7 +217,7 @@ class WebViewActivity : BaseActivity() {
 
         const val PARAM_MODE = "param_mode"
 
-        const val DEFAULT_URL = ""
+        const val DEFAULT_URL = "https://github.com/HelloWorldFeng/Eye.git"
 
         val DEFAULT_TITLE = GlobalUtil.appName
 
