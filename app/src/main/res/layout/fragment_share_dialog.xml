@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:text="@string/share"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/tvToWechatFriends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_share_wechat_black_30dp"
+            android:drawablePadding="10dp"
+            android:text="@string/wechat"
+            android:gravity="center_horizontal"
+            android:textColor="@color/grayDark"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvShareToQQ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_share_qq_black_30dp"
+            android:drawablePadding="10dp"
+            android:text="@string/qq_friends"
+            android:gravity="center_horizontal"
+            android:textColor="@color/grayDark"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/llMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                app:civ_circle_background_color="#d9d9d9"
+                android:src="@drawable/ic_baseline_more_horiz_30" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/more"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textSize="14sp"/>
+</LinearLayout>
